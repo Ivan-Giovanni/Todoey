@@ -30,11 +30,18 @@
                             <outlet property="delegate" destination="lnm-in-bRY" id="vrl-7s-Cs2"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todoey" id="8Qf-Kl-FvU"/>
+                    <navigationItem key="navigationItem" title="Todoey" id="8Qf-Kl-FvU">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="TR0-9z-XD6">
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="lnm-in-bRY" id="0Vd-JM-BmZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hRj-Kw-C0d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1852.6717557251907" y="-126.05633802816902"/>
+            <point key="canvasLocation" x="1068" y="-126"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Vnx-nL-9H5">
@@ -56,10 +63,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jw4-Hl-hdB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="918" y="-126"/>
+            <point key="canvasLocation" x="352" y="-126"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
